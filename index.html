@@ -1,0 +1,24 @@
+<script>
+    const notaUm = Number(prompt(`Qual foi a sua Primeira nota?`));
+    const notaDois = Number(prompt(`Qual foi sua Segunda nota?`));
+    const notaTres = Number(prompt(`Qual foi sua Terceira nota?`));
+    const exercicios = Number(prompt(`Qual foi a sua nota do seu exercicios?`));
+
+    let media = (notaUm + (notaDois * 2) + (notaTres * 3) + exercicios) / 7;
+
+    let conceito;
+
+    if (media >= 9 && media < 10) {
+        conceito = "A" ;
+    } else if (media >= 7.5 && media < 9) {
+        conceito = "B" ;
+    } else if (media >= 6 && media < 7.5) {
+        conceito = "C" ;
+    } else if (media < 6 && media > 0) {
+        conceito = "D" ;
+    } else  {
+        alert("Faça valores corretos!!");
+    }
+
+    document.write(`A seu conceito foi de ${conceito}`) ;
+</script>
